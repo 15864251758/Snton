@@ -1,0 +1,346 @@
+.containter-person{
+	width: 1288px;
+	margin: 0px auto;
+}
+.person-block1{
+	background: url(../images/personbg.jpg) no-repeat;
+	width: 100%;
+	padding: 30px;
+}
+.person-left{
+	width: 250px;
+	float: left;
+}
+.person-left1{
+	background: url(../images/person-bg1.png);
+	width: 250px;
+	height: 154px;
+	position: relative;
+}
+.person-left1 img{
+	position: absolute;
+	top:30px;
+	left: 20px;
+	width: 70px;
+	height: 80px;
+}
+.person-left1-txt{
+	display: inline-block;
+	position: absolute;
+	left: 100px;
+	top:40px;
+}
+.person-left1-txt h3{
+	font-weight: 500;
+	font-size: 18px;
+}
+
+.person-left2{
+	background: url(../images/person-bg2.png);
+	height: 655px;
+	width: 250px;
+	padding: 20px 6px 0 4px;
+}
+.person-left2 ul {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+.person-left2 li {
+    padding: 5px 0 5px 50px;
+    margin: 2px 0;
+    font-size: 14px;
+}
+
+.person-left2 li img{
+    margin-right: 10px;
+    vertical-align: bottom;
+    border: 0 none;
+}
+.person-right{
+	background: url(../images/person-bg3.png);
+	width: 972px;
+	height: 810px;
+	float: left;
+}
+.person-left1-txt p{
+	font-size: 14px;
+	margin: 6px 0;
+}
+.work-search{
+	padding: 30px 0 0 0;
+}
+
+.work-search h3{
+	font-size: 16px;
+	font-weight: 400;
+	text-align: center;
+}   
+.rendezvous-input-date{
+	display: none;
+}
+.person-right h3{
+    height: 50px;
+    line-height: 58px;
+    margin-left: 34px;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.person-right ul {
+    padding: 70px 260px 70px 70px;
+    font-size: 15px;
+    line-height: 26px;
+}
+.person-right b{
+	margin-right: 4px;
+}
+.person-right ul span{
+    float: right;
+}
+.link-person {
+    background: url(../images/person-bg4.png);
+    height: 700px;
+    width: 876px;
+    margin: 0px auto;
+    position: absolute;
+    top: 340px;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    display: none;
+}
+.link-person h3 {
+    margin-left: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #ddd;
+    margin-right: 10px;
+    padding-left: 20px;
+}
+.link-person h3 img{
+	margin-right: 4px;
+	width: 20px;
+	vertical-align:middle;
+}
+.link-person ul{
+	padding: 70px;
+	font-size: 15px;
+}
+.link-person img{
+	margin-right: 10px;
+}
+.link-person ul li{
+	line-height: 28px;
+}
+#f12{
+	position: absolute;
+	right: 10px;
+	top: 12px;
+	width: 20px;
+	cursor: pointer;
+}
+
+/*search*/
+.search-cate {
+    margin: 0 30px;
+    padding: 30px 0 14px;
+}
+.search-cate li a{
+	cursor: pointer;
+}
+.search-cate li{
+	float: left;
+	margin-right: 10px;
+	border-bottom: 1px solid #0f315d;
+	color: #0f315d;
+}
+.main-search{
+	margin: 0 30px;
+	position: relative;
+}
+.main-search input{
+	width: 700px;
+	height: 40px;
+	position: relative;
+}
+#searchList input{
+	width: 70px;
+	border: none;
+}
+.main-search button{
+	width: 100px;
+	height: 40px;
+	position: absolute;
+	cursor: pointer;
+}
+.main-search>img{
+    position: absolute;
+    left: 670px;
+    cursor: pointer;
+    top: 7px;
+}
+.main-search span {
+    position: absolute;
+    top: 6px;
+    left: 820px;
+    width: 100px;
+
+}
+.main-search span img{
+    width: 10px;
+    margin-left: 4px;
+    cursor: pointer;
+}
+#searchList{
+	width: 80px;
+	position: absolute;
+	left: 816px;
+	background: #fff;
+	border: 1px solid #ccc;
+	line-height: 34px;
+	font-size: 14px;
+	top: 36px;
+	display: none;
+	z-index: 999999;
+}
+#searchList input{
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+}
+#searchList input:hover{
+	background: #eee;
+};
+.search-main{
+	margin: 30px;
+	width: 800px;
+	background: url(../images/search-bg.png) no-repeat;
+	background-size: 100%;
+	padding: 30px;
+}
+.search-main{
+	margin:30px;
+}
+.search-content h3{
+	font-weight: 400;
+	border-bottom: 1px solid #0f315d;
+	display: inline;
+	font-size: 18px;
+	color: #0f315d;
+}
+.search-txt{
+	margin: 20px 0;
+	font-size: 14px;
+	position: relative;
+}
+.search-txt img{
+	display: inline-block;
+	vertical-align: top;
+	width: 180px;
+}
+.search-txt p{
+    display: inline-block;
+    width: 480px;
+    margin-left: 20px;
+}
+.search-txt a{
+	position: absolute;
+	right: 20px;
+	bottom:0;
+	border-bottom: 1px solid #ddd;
+}
+
+/*日历*/
+.ui-datepicker-header{	
+	background: #FBFBFB;
+	height: 60px;
+	border: 4px 4px 0 0;
+	padding: 18px 8px;
+	color: #333;
+	font-size: 14px;
+	text-align: center;
+}
+.block2-left-2{
+	width: 238px;
+}
+.ui-icon{
+	cursor: pointer;
+	position: absolute;
+	top: 18px;
+}
+.ui-datepicker-calendar thead{
+	color: #fff;
+}
+.ui-datepicker-calendar{
+	border-collapse: collapse;
+	border-spacing: 0;
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+.ui-datepicker-calendar thead th span{
+	padding: 16px 11px;
+}
+.ui-datepicker-calendar tbody{
+	background: #FBFBFB;
+	text-align: center;
+	font-size: 12px;
+	line-height: 24px;
+}
+.ui-datepicker-calendar tbody td{
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+}
+.ui-datepicker-calendar tbody td a{
+	display: inline-block;
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+
+}
+.ui-datepicker-calendar tbody td a:hover{
+	background: #70AAD7;
+	color: #fff;
+}
+.ui-datepicker-calendar tbody td a:active{
+	background: #70AAD7;
+	color: #fff;
+}
+.ui-datepicker-calendar thead{
+	font-size: 12px;
+	color: #000;
+	font-weight: 400;
+	height: 26px;
+	background: #FBFBFB;
+}
+.ui-icon-circle-triangle-e{
+	color: #333;
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	right: 40px;
+	background: none;
+}
+.ui-icon-circle-triangle-w{
+	color:  #333;
+	background: none;
+	z-index: 9999;
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	left: 40px;
+}
+.link2 {
+	top: 220px !important;
+}
+
+[class*=link]{
+	display: none;
+}
