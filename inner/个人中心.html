@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/person.css">
+	<style>
+		/*区分日历样式*/
+		.ui-datepicker-header{	
+			background: #FBFBFB;
+			height: 60px;
+			border: 4px 4px 0 0;
+			padding: 18px 8px;
+			color: #333;
+			font-size: 14px;
+			text-align: center;
+		}
+		.block2-left-2{
+			width: 238px;
+		}
+		.ui-icon{
+			cursor: pointer;
+			position: absolute;
+			top: 18px;
+		}
+		.ui-datepicker-calendar thead{
+			color: #fff;
+		}
+		.ui-datepicker-calendar{
+			border-collapse: collapse;
+			border-spacing: 0;
+			margin: 0;
+			padding: 0;
+			border: none;
+		}
+		.ui-datepicker-calendar thead th span{
+			padding: 16px 11px;
+		}
+		.ui-datepicker-calendar tbody{
+			background: #FBFBFB;
+			text-align: center;
+			font-size: 12px;
+			line-height: 24px;
+		}
+		.ui-datepicker-calendar tbody td{
+			border-radius: 50%;
+			width: 30px;
+			height: 30px;
+			line-height: 30px;
+		}
+		.ui-datepicker-calendar tbody td a{
+			display: inline-block;
+			height: 30px;
+			width: 30px;
+			border-radius: 50%;
+
+		}
+		.ui-datepicker-calendar tbody td a:hover{
+			background: #70AAD7;
+			color: #fff;
+		}
+		.ui-datepicker-calendar tbody td a:active{
+			background: #70AAD7;
+			color: #fff;
+		}
+		.ui-datepicker-calendar thead{
+			font-size: 12px;
+			color: #000;
+			font-weight: 400;
+			height: 26px;
+			background: #FBFBFB;
+		}
+		.ui-icon-circle-triangle-e{
+			color: #333;
+			width: 40px;
+			height: 40px;
+			display: inline-block;
+			right: 40px;
+			background: none;
+		}
+		.ui-icon-circle-triangle-w{
+			color:  #333;
+			background: none;
+			z-index: 9999;
+			width: 40px;
+			height: 40px;
+			display: inline-block;
+			left: 40px;
+		}
+	</style>
+</head>
+<body>
+	<div class="containter-person" style="background:none;">
+		<div class="top">
+			<img src="images/logo.png" alt="">
+			<a href="#">集团官网</a>
+		</div>
+	</div>
+		<div class="topbar">
+			<ul class="clearfix">
+				<li class="home">
+					<a href="#">
+						<img src="images/home.png" alt="">
+					</a>
+				</li>
+				<li class="home-on"><a href="#">首页</a></li>
+				<li><a href="#">工作动态</a></li>
+				<li><a href="#">胜通学院</a></li>
+				<li><a href="#">通知通报</a></li>
+				<li><a href="#">公文查阅</a></li>
+				<li><a href="#">相关链接</a></li>
+				<li class="user">
+					<img src="images/me.png" alt="">
+					<a href="#">退出登录</a>
+				</li>
+			</ul>
+		</div>
+	<div class="containter">
+		<div class="person-block1 clearfix">
+			<div class="person-left">
+				<div class="person-left1">
+					<img src="images/person.png" alt="">
+					<div class="person-left1-txt">
+						<h3>戴永明</h3>
+						<p>晟通集团财务部</p>
+						<p>管理员</p>
+					</div>
+				</div>
+				<div class="person-left2">
+					<ul>
+						<li id="collect"><a href="javascript:;"><img src="images/person1.png" alt="">我的收藏</a></li>
+						<li id="ago"><a href="javascript:;"><img src="images/person2.png" alt="">历史记录</a></li>
+						<li id="download"><a href="javascript:;"><img src="images/person3.png" alt="">下载过的文件</a></li>
+					</ul>
+					<div class="work-search">
+						<h3>工作计划查询</h3>
+						<div class="block2-left-2" id="datepicker1">
+						
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="person-right">
+				<h3>我的收藏</h3>
+				<ul id="collect1">
+					<li><a href=""><b>·</b>下载过的文件下载过的文件下载过的文件<span>2016-07-08 &nbsp;13:25</span></a></li>
+					<li><a href=""><b>·</b>下载过的文件下载过的文件下载过的文件<span>2016-07-08 &nbsp;13:25</span></a></li>
+					<li><a href=""><b>·</b>下载过的文件下载过的文件下载过的文件<span>2016-07-08 &nbsp;13:25</span></a></li>
+					<li><a href=""><b>·</b>下载过的文件下载过的文件下载过的文件<span>2016-07-08 &nbsp;13:25</span></a></li>
+					<li><a href=""><b>·</b>下载过的文件下载过的文件下载过的文件<span>2016-07-08 &nbsp;13:25</span></a></li>
+					<li><a href=""><b>·</b>下载过的文件下载过的文件下载过的文件<span>2016-07-08 &nbsp;13:25</span></a></li>
+					<li><a href=""><b>·</b>下载过的文件下载过的文件下载过的文件<span>2016-07-08 &nbsp;13:25</span></a></li>
+					<li><a href=""><b>·</b>下载过的文件下载过的文件下载过的文件<span>2016-07-08 &nbsp;13:25</span></a></li>
+					<li><a href=""><b>·</b>下载过的文件下载过的文件下载过的文件<span>2016-07-08 &nbsp;13:25</span></a></li>
+					<li><a href=""><b>·</b>下载过的文件下载过的文件下载过的文件<span>2016-07-08 &nbsp;13:25</span></a></li>
+				</ul>
+				<ul id="collect2" style="display:none;">
+					<li><b>·</b>下载过的文件下载过的文件下载过的文件<span>2016-07-08 &nbsp;13:25</span></li>
+					<li><b>·</b>下载过的文件下载过的文件下载过的文件<span>2016-07-08 &nbsp;13:25</span></li>
+				</ul>
+				<ul <ul id="collect3" style="display:none;">
+					<li><b>·</b>下载过的文件下载过的文件下载过的文件<span>2016-07-08 &nbsp;13:25</span></li>
+				</ul>
+			
+			</div>
+		</div>
+		<div class="block3 clearfix">
+			<p><a id="properson" href="javascript:;">集团网站群</a></p>
+			<p><a id="pro2" href="javascript:;">友情链接</a></p>
+			<p><a id="pro3" href="javascript:;">通讯录</a></p>
+			<p><img src="images/ewm.png" alt=""><a href="javascript:;">胜通官方微信</a></p>
+		</div>
+	</div>
+
+<div class="footer">
+	<div class="container">
+		<p class="copy">
+			<span>法律声明</span>
+			<span>版权所有</span>
+			<span>山东胜通集团股份有限公司</span>
+			<span>鲁ICP备05014980号</span>
+			<span>青岛正邦提供技术支持</span>
+		</p>
+		<p class="context">
+			<span>地 址：山东省肯垦利经济开发区新兴路337号</span>
+			<span>集团电话： + 86-0546-7730001 7730008</span>
+			<span>传 真： + 86-0546-7730008</span>
+			<img src="images/footer-logo.png" alt="">
+		</p>
+	</div>
+</div>
+
+<div id="linkperson" class="link-person">
+	<h3>
+		<img src="images/people1.png" alt="">
+		集团网站群
+	</h3>
+	<img src="images/close.png" alt="" id="closeperson">
+	<ul>
+		<li>
+			<img src="images/center-link.png" alt="">
+			<span>集团网站群</span>
+		</li>
+		<li>
+			<img src="images/center-link.png" alt="">
+			<span>集团网站群</span>
+		</li>
+		<li>
+			<img src="images/center-link.png" alt="">
+			<span>集团网站群</span>
+		</li>
+		<li>
+			<img src="images/center-link.png" alt="">
+			<span>集团网站群</span>
+		</li>
+		<li>
+			<img src="images/center-link.png" alt="">
+			<span>集团网站群</span>
+		</li>
+	</ul>
+</div>
+
+
+<div id="link2" class="link2">
+<img src="images/close.png" alt="" id="close2">
+	<h3>
+		<img src="images/people.png" alt="">
+		友情链接
+	</h3>
+	<div>
+		<h3>政府机构网站</h3>
+		<ul>
+			<li><a href="#">中央人民政府</a></li>
+			<li><a href="#">中央人民政府</a></li>
+			<li><a href="#">中央人民政府</a></li>
+		</ul>
+	</div>
+	<div style="padding-left: 78px;">
+		<h3>政府机构网站</h3>
+		<ul>
+			<li><a href="#">中央人民政府</a></li>
+			<li><a href="#">中央人民政府</a></li>
+			<li><a href="#">中央人民政府</a></li>
+			<li><a href="#">中央人民政府</a></li>
+			<li><a href="#">中央人民政府</a></li>
+			<li><a href="#">中央人民政府</a></li>
+			<li><a href="#">中央人民政府</a></li>
+			<li><a href="#">中央人民政府</a></li>
+			<li><a href="#">中央人民政府</a></li>
+			<li><a href="#">中央人民政府</a></li>
+		</ul>
+	</div>
+	<div style="padding-left: 78px;">
+		<h3>政府机构网站</h3>
+		<ul>
+			<li><a href="#">中央人民政府</a></li>
+			<li><a href="#">中央人民政府</a></li>
+			<li><a href="#">中央人民政府</a></li>
+			<li><a href="#">中央人民政府</a></li>
+			<li><a href="#">中央人民政府</a></li>
+			<li><a href="#">中央人民政府</a></li>
+			<li><a href="#">中央人民政府</a></li>
+			<li><a href="#">中央人民政府</a></li>
+			<li><a href="#">中央人民政府</a></li>
+			<li><a href="#">中央人民政府</a></li>
+		</ul>
+	</div>
+</div>
+
+<div id="link3" class="link3">
+<img src="images/close.png" alt="" id="close3">
+	<ul>
+	<li>
+		<h3>
+		<img src="images/people.png" alt="">
+		通讯录
+		</h3>
+	</li>
+		
+	<li><h3 id="jituan">集团通讯录</h3></li>
+	<li><h3 id="gongsi">子公司通讯录</h3></li>
+	<div id="jituan1">
+		<img src="images/zonggongsi.png" alt="">
+		<img src="images/zonggongsi.png" alt="">
+	</div>
+	<div id="gongsi1">
+		<img src="images/01.jpg" alt="">
+	</div>
+</div>
+
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/rendezvous.js"></script>
+	<script src="js/person.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+
+
+</body>
+</html>
